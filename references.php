@@ -8,9 +8,6 @@ $args = array(
     'post_type' => 'our_reference', // Replace 'my_custom_type' with your actual custom post type
     'posts_per_page' => -1, // Number of posts to show. Use -1 for all posts.
     'post_status'    => 'publish',
-    'meta_key'       => 'order',    // The custom field you are ordering by
-    'orderby'        => 'meta_value_num', // 'meta_value_num' for numeric values, 'meta_value' for others
-    'order'          => 'ASC',            // 'ASC' for ascending, 'DESC' for descending
 );
 
 // The Query
@@ -41,7 +38,7 @@ $the_query = new WP_Query($args); ?>
                 <?php
             endwhile;
         else:
-            echo '<p>' . _e('Sorry, no posts matched your criteria.') . '</p>';
+            echo '<p>' . _e('Sorry, no reference matched your criteria.') . '</p>';
         endif;
 
         wp_reset_postdata();

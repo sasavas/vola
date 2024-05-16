@@ -41,20 +41,6 @@ function cmb2_reference_fields() {
         ),
     ));
 
-    $cmb->add_field(array(
-        'name'        => esc_html__('Order', 'online-generator'),
-        'id'          => $prefix . 'order',
-        'type'        => 'text_small', // This is technically a text input but can be typecast to a number.
-        'attributes'  => array(
-            'placeholder' => esc_html__('Order', 'online-generator'),
-            'type' => 'number', // Makes the input a number type
-            'pattern' => '\d*', // Only allows digits to be entered
-            'min' => '0', // Minimum value
-            'max' => '100', // Maximum value
-            'step' => '1' // Increment steps
-        )
-    ));
-
     // Image field for Icon
     $cmb->add_field(array(
         'name' => esc_html__('Icon', 'online-generator'),

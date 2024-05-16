@@ -7,9 +7,6 @@ $args = array(
     'post_type' => 'product',
     'posts_per_page' => -1,
     'post_status' => 'publish',
-    'meta_key'       => 'order',    // The custom field you are ordering by
-    'orderby'        => 'meta_value_num', // 'meta_value_num' for numeric values, 'meta_value' for others
-    'order'          => 'ASC',            // 'ASC' for ascending, 'DESC' for descending
 );
 
 // The Query
