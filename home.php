@@ -7,9 +7,6 @@
 
     <?php
 
-    echo 'stylesheet uri' . get_stylesheet_uri(  );
-    echo 'template dir uri' . get_template_directory_uri();
-
     include (get_template_directory() . "/navigation.php");
 
     $base_img = get_template_directory_uri() . '/assets/img/';
@@ -108,7 +105,7 @@
                 </div>
             </div>
 
-            <?php include_once (get_template_directory() . '/references.php'); ?>
+
 
             <div class="page_content vid">
                 <h2 style="text-transform:uppercase;">
@@ -128,7 +125,7 @@
                     <img src="<?php echo $base_img; ?>Group 83.png" alt="">
                 </div>
                 <div class="pc_inner">
-                    <?php include_once (get_template_directory() . '/product-list.php'); ?>
+                    <?php get_template_part('product-list'); ?>
                 </div>
             </div>
         </div>

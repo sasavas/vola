@@ -1,7 +1,5 @@
 <?php
 
-$base_url = get_template_directory_uri(); // Base URL for static resources
-
 // Args for the custom post type query
 $args = array(
     'post_type' => 'product',
