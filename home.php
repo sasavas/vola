@@ -105,7 +105,7 @@
                 </div>
             </div>
 
-
+            <?php get_template_part('product-list'); ?>
 
             <div class="page_content vid">
                 <h2 style="text-transform:uppercase;">
