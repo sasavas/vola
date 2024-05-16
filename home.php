@@ -89,7 +89,7 @@
             <div class="insights">
                 <div class="section">
                     <span class="material-symbols-outlined mat-icon">laptop_mac</span>
-                    <p>We works hard to cover all aspects of aviation operations in single software that communicates
+                    <p>We work hard to cover all aspects of aviation operations in single software that communicates
                         with
                         each other.</p>
                 </div>
@@ -101,7 +101,7 @@
                 <div class="section">
                     <span class="material-symbols-outlined mat-icon" aria-hidden="false"
                         aria-label="How it works">design_services</span>
-                    <p>We provides a wide range of services on aviation software.</p>
+                    <p>We provide a wide range of services on aviation software.</p>
                 </div>
             </div>
 
