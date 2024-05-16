@@ -26,7 +26,6 @@ if ($the_query->have_posts()):
 
         <?php if ($show): ?>
             <div class="product">
-                <!-- <span class="material-symbols-outlined mat-icon" aria-hidden="false" aria-label="How it works">verified</span> -->
                 <?php if ($icon): ?>
                     <img width="44px" height="44px" src="<?php echo esc_url($icon); ?>" alt="<?php echo esc_attr($title); ?> icon">
                 <?php endif; ?>
@@ -57,7 +56,7 @@ if ($the_query->have_posts()):
                     </div>
                 </div>
             </div>
-        <? endif; ?>
+        <?php endif; ?>
 
         <?php
     endwhile;
