@@ -1,0 +1,24 @@
+/*
+Theme Name: Vola
+Theme URI: 
+Author: Aldaci
+Author URI: www.aldaci.com
+Description: Vola
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, post-formats, rtl-language-support, translation-ready, etc.
+Text Domain: vola
+*/
+
+@import './assets/styles/reset.css';
+@import './assets/fonts/fonts.css';
+@import './assets/styles/bootstrap.css';
+@import './assets/styles/light.css';
+
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

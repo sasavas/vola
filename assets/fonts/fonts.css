@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Yeager";
+    font-weight: 700;
+    src:
+      url("./Yeager-Bold.otf") format("opentype"),
+  }
+
+@font-face {
+    font-family: "Yeager";
+    font-weight: 500;
+    src:
+        url("./Yeager-Regular.otf") format("opentype"),
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Yeager;
+}
+
+@font-face {
+    font-family: "Exo 2";
+    font-weight: 500;
+    src:
+        url("./Exo2-Regular.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "Exo 2";
+    font-weight: 600;
+    src:
+        url("./Exo2-Medium.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "Exo 2";
+    font-weight: 700;
+    src:
+        url("./Exo2-SemiBold.ttf") format("truetype"),
+}
