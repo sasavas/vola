@@ -41,7 +41,7 @@ function scripts_footer()
 
 function my_theme_styles()
 {
-    wp_enqueue_style('home-style', get_stylesheet_uri());
+    wp_enqueue_style('vola-styles', get_stylesheet_uri());
 }
 
 add_action('after_setup_theme', 'setup');
