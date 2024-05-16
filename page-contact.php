@@ -17,7 +17,7 @@
 
     <div class="contact-container">
         <div class="bg_image__contact">
-            <img src="<?php echo $base_img; ?>/c_bg.png" alt="">
+            <img src="<?php echo $base_img; ?>c_bg.png" alt="">
 
             <div class="hero__contact">
                 <div class="hero_inner">
