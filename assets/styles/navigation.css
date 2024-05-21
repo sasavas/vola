@@ -31,7 +31,7 @@ menu {
   left: 0;
   right: 0;
 }
-app-logo {
+.app-logo {
   height: 44px;
   width: auto;
 }
@@ -57,8 +57,8 @@ app-logo {
     height: 96px;
     z-index: 1;
   }
-  app-logo {
-    height: 30px;
+  .app-logo {
+    height: 32px;
     width: auto;
   }
   nav {

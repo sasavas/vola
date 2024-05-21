@@ -2,7 +2,7 @@
 <?php require_once (get_template_directory() . '/logo.php'); ?>
 
 <div class="navigation-container">
-    <?php echo get_logo_horizontal(44); ?>
+    <?php echo get_logo_horizontal(); ?>
     <nav class="ms-auto">
         <a href="<?php echo home_url('/'); ?>">HOME</a>
 

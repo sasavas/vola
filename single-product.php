@@ -7,12 +7,12 @@
 <div class="root">
 
     <?php
-    
+
     global $post;
     $product = $post;
     // echo 'Current post ID is: ' . $post->ID;
     // echo 'Title: ' . get_the_title($post->ID);
-
+    
     include (get_template_directory() . "/navigation.php");
 
     $base_img = get_template_directory_uri() . '/assets/img/';
@@ -26,7 +26,7 @@
 
     // $product_slug = 'taps';  // Set this to the desired product slug
     // $product = get_page_by_path($product_slug, OBJECT, 'product');
-
+    
     // $title = $post->title;
     // $sub_title = $post->subtitle;
     
@@ -51,10 +51,12 @@
                         <div class="section_container <?php echo $theme ?>">
                             <div class="<?php echo $theme ?> <?php echo $image_location ?> layout">
                                 <?php $feature_icon_url = $feature['feature_icon']; ?>
-                                <div class="img">
-                                    <img style="max-width: 40vw;" src="<?php echo esc_url($feature_icon_url); ?>"
-                                        alt="<?php echo esc_attr(get_the_title($feature_icon_id)); ?>">
-                                </div>
+                                <?php if ($feature_icon_url): ?>
+                                    <div class="img">
+                                        <img style="width: 80%" src="<?php echo esc_url($feature_icon_url); ?>"
+                                            alt="<?php echo esc_attr(get_the_title($feature_icon_id)); ?>">
+                                    </div>
+                                <?php endif; ?>
                                 <div class="text">
                                     <h2><?php echo esc_html($feature['feature_name']); ?></h2>
                                     <h6><?php echo esc_html($feature['feature_subtitle']); ?></h6>
@@ -73,7 +75,7 @@
         </div>
         <?php
         wp_reset_postdata();
-        
+
         get_footer();
         ?>
         <?php

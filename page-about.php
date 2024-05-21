@@ -48,7 +48,7 @@ Template Name: About
         </div>
         <div class="d-flex flex-column align-items-center">
 
-            <?php echo get_logo_vertical(240, 96); ?>
+            <?php echo get_logo_vertical(96); ?>
 
             <h3>WE PROVIDES A WIDE RANGE OF SERVICES ON AVIATION SOFTWARE</h3>
             <p>VOLA works hard to cover all aspects of aviation operations in single software that communicates each

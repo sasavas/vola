@@ -156,6 +156,7 @@ function cmb2_product_fields()
         'options' => array(
             'left' => esc_html__('Left', 'online-generator'),
             'right' => esc_html__('Right', 'online-generator'),
+            'center' => esc_html__('Center', 'online-generator'),
         ),
         // 'default' => 'left',
     )

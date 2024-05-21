@@ -3,7 +3,7 @@
 
 <div class="footer-container">
     <div class="summary">
-        <?php echo get_logo_horizontal(44); ?>
+        <?php echo get_logo_horizontal(); ?>
     </div>
 
     <div class="vola">
