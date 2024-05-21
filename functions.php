@@ -1,57 +1,59 @@
 <?php
-function register_nav()
-{
+// Register navigation menus
+function register_nav() {
     register_nav_menus(
         array(
-            "header" => "Header"
-        )
-    );
-
-    register_nav_menus(
-        array(
-            "footer" => "Footer"
-        )
-    );
-
-    register_nav_menus(
-        array(
-            "404" => "404"
+            'header' => 'Header',
+            'footer' => 'Footer',
+            '404'    => '404'
         )
     );
 }
 
-if (!function_exists("setup")):
-    function setup()
-    {
-        register_nav();
-        add_theme_support('post-thumbnails');
-        add_image_size('team', 475, 475, array('center', 'center'));
-    }
-endif;
-
-function scripts_header()
-{
-    wp_enqueue_style('init', get_stylesheet_uri());
+// Theme setup function
+function setup() {
+    register_nav();
+    add_theme_support('post-thumbnails');
+    add_image_size('team', 475, 475, array('center', 'center'));
 }
 
-function scripts_footer()
-{
-    // wp_enqueue_scripts('init', get_template_directory_uri(  ) .'/js/init.js', array('jquery'));
+if (!function_exists('setup')) {
+    add_action('after_setup_theme', 'setup');
 }
 
-function my_theme_styles()
-{
+// Enqueue styles and scripts
+function enqueue_theme_assets() {
+    // Enqueue main stylesheet
     wp_enqueue_style('vola-styles', get_stylesheet_uri());
+
+    $styles_dir = get_template_directory() . '/assets/styles/';
+    $styles_url = get_template_directory_uri() . '/assets/styles/';
+    
+    foreach (glob($styles_dir . '*.css') as $style_file) {
+        $style_handle = 'custom-' . basename($style_file, '.css');
+        wp_enqueue_style($style_handle, $styles_url . basename($style_file));
+    }
+
+    // Enqueue jQuery from local file
+    wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery-3.7.1.min.js', array(), null, true);
+    
+    // Uncomment this line to enqueue your custom init script
+    // wp_enqueue_script('init', get_template_directory_uri() . '/js/init.js', array('jquery'), null, true);
 }
 
-add_action('after_setup_theme', 'setup');
-add_action('wp_enqueue_scripts', 'my_theme_styles');
-// add_action( 'wp_footer', 'scripts_footer' );
+add_action('wp_enqueue_scripts', 'enqueue_theme_assets');
 
+// Include custom post types
+$custom_post_types = array(
+    'product',
+    'our-reference',
+    'vola-page',
+    'social-media',
+    'home-properties',
+    'products-properties'
+);
 
-include_once(get_template_directory(  ) .'/custom-post-types/product.php');
-include_once(get_template_directory(  ) .'/custom-post-types/our-reference.php');
-include_once(get_template_directory(  ) .'/custom-post-types/vola-page.php');
-include_once(get_template_directory(  ) .'/custom-post-types/social-media.php');
-include_once(get_template_directory(  ) .'/custom-post-types/home-properties.php');
-include_once(get_template_directory(  ) .'/custom-post-types/products-properties.php');
+foreach ($custom_post_types as $cpt) {
+    include_once(get_template_directory() . '/custom-post-types/' . $cpt . '.php');
+}
+?>
