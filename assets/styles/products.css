@@ -1,20 +1,33 @@
 .product-container {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  width: calc(100% - 128px);
-  margin: 0px 64px 32px 64px;
+  gap: 2px;
+  width: 100%;
+  margin: 0 0 32px 0;
+}
+
+.single-product .product-container .product {
+  padding :24px 32px;
+  border: none;
+  max-width: calc(100% - 128px);
+  margin: 48px 64px;
+  color: var(--background-3);
+  flex-direction: column;
+  display: flex;
+  gap: 12px;
+  transition: all 400ms;
 }
 
 .product-container .product {
   border-radius: 12px;
   border: 1px solid #E8EAFF;
-  padding :32px;
-  max-width: 100%;
+  padding :24px 32px;
+  max-width: calc(100% - 128px);
+  margin: 12px 64px;
   color: var(--background-3);
   align-items: center;
   display: flex;
-  gap: 32px;
+  gap: 16px;
   transition: all 400ms;
 }
 
@@ -56,6 +69,7 @@
 .hero__home {
   width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding: 96px 32px;
 }
