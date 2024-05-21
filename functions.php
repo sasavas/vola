@@ -32,11 +32,6 @@ function enqueue_theme_assets() {
     $styles_dir = get_template_directory() . '/assets/styles/';
     $styles_url = get_template_directory_uri() . '/assets/styles/';
 
-    foreach (glob($styles_dir . '*.css') as $style_file) {
-        $style_handle = 'custom-' . basename($style_file, '.css');
-        wp_enqueue_style($style_handle, $styles_url . basename($style_file));
-    }
-
     // Enqueue jQuery from local file
     wp_enqueue_script('jquery', get_template_directory_uri() . '/js/jquery-3.7.1.min.js', array(), null, true);
     
