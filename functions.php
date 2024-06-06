@@ -54,12 +54,4 @@ $custom_post_types = array(
 foreach ($custom_post_types as $cpt) {
     include_once(get_template_directory() . '/custom-post-types/' . $cpt . '.php');
 }
-
-// Add theme support for site icons
-function my_theme_setup() {
-    add_theme_support('site-icon');
-}
-add_action('after_setup_theme', 'my_theme_setup');
-
-
 ?>

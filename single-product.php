@@ -84,6 +84,47 @@
     }
 
     ?>
+
+    <div class="faq">
+        <h1>FAQ</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, atque beatae minima voluptatem ipsam reiciendis quod blanditiis consectetur tenetur, accusamus veritatis optio accusantium aut, debitis a ipsa maiores est itaque.
+            Eveniet ea id corrupti commodi rem odit inventore ad voluptatem harum, architecto aliquid ipsa similique asperiores laudantium ab beatae voluptates? Itaque dolore veritatis consequuntur labore nesciunt consectetur temporibus, maiores est?
+        </p>
+        <div class="qa open">
+            <h5>
+                1- What is Taps? <span class="material-icons-outlined toggle_question mat-icon" aria-hidden="false" aria-label="menu">arrow_drop_down</span>
+            </h5>
+            <div class="answer">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat fugit laudantium nisi, suscipit quam quibusdam delectus at totam illum aliquam ab magni obcaecati perspiciatis asperiores odit, provident natus vero ut!
+            </div>
+        </div>
+        <div class="qa closed">
+            <h5>
+                2- What is Taps? <span class="material-icons-outlined toggle_question mat-icon" aria-hidden="false" aria-label="menu">arrow_drop_down</span>
+            </h5>
+            <div class="answer">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat fugit laudantium nisi, suscipit quam quibusdam delectus at totam illum aliquam ab magni obcaecati perspiciatis asperiores odit, provident natus vero ut!
+            </div>
+        </div>
+        <div class="qa closed">
+            <h5>
+                3- What is Taps? <span class="material-icons-outlined toggle_question mat-icon" aria-hidden="false" aria-label="menu">arrow_drop_down</span>
+            </h5>
+            <div class="answer">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat fugit laudantium nisi, suscipit quam quibusdam delectus at totam illum aliquam ab magni obcaecati perspiciatis asperiores odit, provident natus vero ut!
+            </div>
+        </div>
+        <div class="qa closed">
+            <h5>
+                4- What is Taps? <span class="material-icons-outlined toggle_question mat-icon" aria-hidden="false" aria-label="menu">arrow_drop_down</span>
+            </h5>
+            <div class="answer">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat fugit laudantium nisi, suscipit quam quibusdam delectus at totam illum aliquam ab magni obcaecati perspiciatis asperiores odit, provident natus vero ut!
+            </div>
+        </div>
+    </div>
+
 <script>
     jQuery(document).ready(function ($) {
         console.log("jQuery is working!");

@@ -46,7 +46,7 @@ Template Name: About
                 </div>
             </div>
         </div>
-        <div class="d-flex flex-column align-items-center">
+        <div class="we_short px-3">
 
             <?php echo get_logo_vertical(96); ?>
 

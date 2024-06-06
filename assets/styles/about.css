@@ -70,6 +70,13 @@
     letter-spacing: -2px;
     margin-bottom: 24px;
 }
+
+.we_short{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero__about .hero_inner {
     max-width: 1800px;
     flex-direction: column;
@@ -95,4 +102,21 @@
     100% {
         transform: rotate3d(1, 1, 1, 0deg) translateX(0px) translateY(0px);
    }
+}
+
+@media screen and (max-width: 960px) {
+    .bg_image__about {
+        padding: 32px 16px !important;
+    }
+    .hero__about .hero_content p{
+        max-width: 100% !important;
+    }
+    .we_short{
+        text-align: center;
+    }
+    button{
+        font-size: 17px !important;
+        padding: 12px 16px !important;
+        width: fit-content !important;
+    }
 }

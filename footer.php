@@ -4,6 +4,29 @@
 <div class="footer-container">
     <div class="summary">
         <?php echo get_logo_horizontal(); ?>
+
+        <div class="site_map">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">References</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Products</a></li>
+                <li><a href="">LMS</a></li>
+                <li><a href="">EFB</a></li>
+                <li><a href="">Easy Comply</a></li>
+                <li><a href="">Gheorghe AI</a></li>
+            </ul>
+            <ul>
+                <li><a href="">About</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Call Us</a></li>
+                <li><a href="">Let us welcome you</a></li>
+            </ul>
+        </div>
     </div>
 
     <div class="vola">

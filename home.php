@@ -88,18 +88,18 @@
         <div class="page_inner__home">
             <div class="insights">
                 <div class="section">
-                    <span class="material-symbols-outlined mat-icon">laptop_mac</span>
+                    <span class="material-icons-outlined mat-icon">laptop_mac</span>
                     <p>We work hard to cover all aspects of aviation operations in single software that communicates
                         with
                         each other.</p>
                 </div>
                 <div class="section">
-                    <span class="material-symbols-outlined mat-icon" aria-hidden="false"
+                    <span class="material-icons-outlined mat-icon" aria-hidden="false"
                         aria-label="Trusted by ">ads_click</span>
                     <p>VOLA is trusted by many aviation organizations around the world who use its software</p>
                 </div>
                 <div class="section">
-                    <span class="material-symbols-outlined mat-icon" aria-hidden="false"
+                    <span class="material-icons-outlined mat-icon" aria-hidden="false"
                         aria-label="How it works">design_services</span>
                     <p>We provide a wide range of services on aviation software.</p>
                 </div>

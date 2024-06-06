@@ -1,15 +1,51 @@
 .footer-container {
   display: flex;
-  max-width: 1600px;
+  max-width: 1280px;
   flex-direction: column;
-  width: 100%;
+  width: calc(100% - 192px);
   gap: 32px;
   margin-top: 96px;
-  padding: 96px;
+  margin-left: 96px;
+  margin-right: 96px;
+  padding: 96px 0;
 }
 
 .footer-container .summary {
+  gap: 24px;
   display: flex;
+}
+
+.footer-container .summary .app-logo{
+  height: 44px !important;
+}
+
+.site_map{
+  font-size: 13px;
+  flex-grow: 1;
+  justify-content: right;
+  display: flex;
+}
+
+.site_map ul{
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.site_map ul li{
+  display: flex;
+  align-items: center;
+  height: 32px;
+  cursor: pointer;
+}
+
+.site_map ul li:first-child{
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--background-3);
 }
 
 .footer-container .vola {
@@ -31,6 +67,20 @@
     gap: 32px;
     margin-top: 48px;
     padding: 32px 24px;
+  }
+
+  .summary{
+    flex-direction: column;
+}
+
+  .site_map{
+      margin-top: 12px;
+      flex-direction: column;
+  }
+
+  .site_map ul{
+      background: var(--shade-0);
+      margin: 4px 0px !important;
   }
 
   .vola {

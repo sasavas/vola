@@ -20,6 +20,11 @@ nav {
 nav a {
   padding: 20px 24px;
 }
+
+nav.mobile_nav{
+  display: none;
+}
+
 menu {
   display: none;
 }
@@ -61,9 +66,32 @@ menu {
     height: 32px;
     width: auto;
   }
-  nav {
+
+  nav:not(.mobile_nav){
     display: none;
   }
+
+  nav.mobile_nav{
+      z-index: 1;
+      flex-direction: column;
+      left: -16px;
+      top: -16px;
+      right: -16px;
+      height: 100vh;
+      position: absolute;
+      background: var(--shade-0);
+  }
+
+  nav.mobile_nav .material-icons-outlined{
+    padding: 24px 24px 0 24px;
+    margin-left: auto;
+    font-size: 32px;
+  }
+
+  nav.mobile_nav.opened{
+    display: flex;
+}
+
   menu {
     display: flex;
     margin-left: auto;
