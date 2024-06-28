@@ -37,8 +37,7 @@
                         <?php echo do_shortcode('[wpforms id="19" title="false"]'); ?>
                         
                         <div class="d-flex form-actions">
-                            <button type="button" class="btn btn-outline-light btn-lg me-3">Call Us</button>
-                            <button type="button" class="btn btn-light btn-lg ms-3">Write to Us</button>
+                            <button type="button" class="btn btn-light btn-lg">Write to Us</button>
                         </div>
                     </div>
                 </div>

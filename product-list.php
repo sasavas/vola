@@ -52,7 +52,7 @@ if ($the_query->have_posts()):
                                 <span style="text-transform: uppercase;"><?php echo esc_html($title); ?></span>
                             </button>
                         </a>
-                        <button type="button" class="btn btn-primary ms-1">Get in touch</button>
+                        <a href="/contact/" class="btn btn-primary ms-1">Get in touch</a>
                     </div>
                 </div>
             </div>
