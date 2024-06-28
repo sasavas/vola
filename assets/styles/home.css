@@ -29,7 +29,7 @@
   z-index: -3;
   animation-name: opacity-change;
   animation-duration: 5s;
-  animation-delay: 5s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
 .bg_image__home .light_bg {
@@ -59,7 +59,7 @@
   z-index: -2;
   animation-name: flight;
   animation-duration: 5s;
-  animation-delay: 5s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
 .bg_image__home .img_color {
@@ -74,7 +74,7 @@
   z-index: -1;
   animation-name: flight;
   animation-duration: 5s;
-  animation-delay: 5s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
 @keyframes opacity-change {
@@ -112,7 +112,7 @@
   align-items: center;
   animation-name: color-change;
   animation-duration: 5s;
-  animation-delay: 5s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
 .hero__home .hero_content {

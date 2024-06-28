@@ -119,10 +119,6 @@
   background: var(--shade-1);
 }
 
-.faq p {
-  padding: 32px 0;
-}
-
 .faq .answer {
   padding: 24px;
 }

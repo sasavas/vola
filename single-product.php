@@ -76,58 +76,57 @@
         <?php
         wp_reset_postdata();
 
+        $faq_description = get_post_meta($product->ID, 'faq_description', true);
+        $faqs = get_post_meta($product->ID, 'faq_list', true); ?>
+
+        <?php if (!empty($faqs)) { ?>
+            <div class="faq">
+                <h1>FAQ</h1>
+                <p><?php echo $faq_description; ?></p>
+
+                <?php $count = 0; ?>
+                <?php foreach ($faqs as $faq): ?>
+                    <?php $faq_question = $faq['faq_question']; ?>
+                    <?php $faq_answer = $faq['faq_answer']; ?>
+
+                    <div class="qa closed">
+                        <h5>
+                            <?php echo ++$count ?> - 
+                            <?php echo $faq_question; ?>
+                            <span class="material-icons-outlined toggle_question mat-icon" aria-hidden="false"
+                                aria-label="menu">arrow_drop_down</span>
+                        </h5>
+                        <div class="answer">
+                            <?php echo $faq_answer; ?>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        <?php } ?>
+
+        <?php
+        wp_reset_postdata();
         get_footer();
         ?>
         <?php
     } else {
         echo '<p>Product not found.</p>';
     }
-
     ?>
 
-    <div class="faq">
-        <h1>FAQ</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, atque beatae minima voluptatem ipsam reiciendis quod blanditiis consectetur tenetur, accusamus veritatis optio accusantium aut, debitis a ipsa maiores est itaque.
-            Eveniet ea id corrupti commodi rem odit inventore ad voluptatem harum, architecto aliquid ipsa similique asperiores laudantium ab beatae voluptates? Itaque dolore veritatis consequuntur labore nesciunt consectetur temporibus, maiores est?
-        </p>
-        <div class="qa open">
-            <h5>
-                1- What is Taps? <span class="material-icons-outlined toggle_question mat-icon" aria-hidden="false" aria-label="menu">arrow_drop_down</span>
-            </h5>
-            <div class="answer">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat fugit laudantium nisi, suscipit quam quibusdam delectus at totam illum aliquam ab magni obcaecati perspiciatis asperiores odit, provident natus vero ut!
-            </div>
-        </div>
-        <div class="qa closed">
-            <h5>
-                2- What is Taps? <span class="material-icons-outlined toggle_question mat-icon" aria-hidden="false" aria-label="menu">arrow_drop_down</span>
-            </h5>
-            <div class="answer">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat fugit laudantium nisi, suscipit quam quibusdam delectus at totam illum aliquam ab magni obcaecati perspiciatis asperiores odit, provident natus vero ut!
-            </div>
-        </div>
-        <div class="qa closed">
-            <h5>
-                3- What is Taps? <span class="material-icons-outlined toggle_question mat-icon" aria-hidden="false" aria-label="menu">arrow_drop_down</span>
-            </h5>
-            <div class="answer">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat fugit laudantium nisi, suscipit quam quibusdam delectus at totam illum aliquam ab magni obcaecati perspiciatis asperiores odit, provident natus vero ut!
-            </div>
-        </div>
-        <div class="qa closed">
-            <h5>
-                4- What is Taps? <span class="material-icons-outlined toggle_question mat-icon" aria-hidden="false" aria-label="menu">arrow_drop_down</span>
-            </h5>
-            <div class="answer">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat fugit laudantium nisi, suscipit quam quibusdam delectus at totam illum aliquam ab magni obcaecati perspiciatis asperiores odit, provident natus vero ut!
-            </div>
-        </div>
-    </div>
-
-<script>
-    jQuery(document).ready(function ($) {
-        console.log("jQuery is working!");
-    });
-</script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".qa h5").click(function () {
+                if ($(this).parents('.qa').hasClass('open')) {
+                    $(this).parents('.qa').removeClass('open');
+                    $(this).parents('.qa').addClass('closed');
+                } else {
+                    $('.qa').removeClass('open');
+                    $('.qa').addClass('closed');
+                    $(this).parents('.qa').removeClass('closed');
+                    $(this).parents('.qa').addClass('open');
+                }
+            });
+        });
+    </script>
 </div>
